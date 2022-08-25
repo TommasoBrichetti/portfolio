@@ -19,6 +19,8 @@ export class CompetenzeComponent implements OnInit {
 
   vanilla: boolean = false;
 
+  scrolled:boolean = false
+
   ngOnInit(): void {
   }
 
@@ -64,4 +66,9 @@ export class CompetenzeComponent implements OnInit {
 
   //   }
   // }
+
+
+  firstscroll(){
+    this.scrolled = true
+  }
 }

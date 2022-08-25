@@ -1,4 +1,4 @@
-<section (scroll)="revealL()" (scroll)="revealR()">
+<section (scroll)="revealL()" (scroll)="revealR()" (scroll)="firstscroll()">
   <div class="full presentazione" #ow>
     <h2>From 0 to 100</h2>
     <p>full stack website programming at 360°</p>
@@ -220,7 +220,7 @@
 </ul>
 </nav>
 
-<aside>
+<aside > <!--[ngStyle]="{'visibility':scrolled ? 'hidden' : 'visible'}"-->
   <h5>scroll</h5>
   <svg width="40" height="20" viewBox="0 0 55 30" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 1.84081C0 1.37383 0.184618 0.895942 0.542995 0.537565C1.25975 -0.179188 2.43262 -0.179188 3.14937 0.537565L27.6819 25.0701L51.8561 0.895942C52.5728 0.179188 53.7457 0.179188 54.4624 0.895942C55.1792 1.6127 55.1792 2.78557 54.4624 3.50232L28.9851 28.9905C28.2683 29.7073 27.0955 29.7073 26.3787 28.9905L0.542995 3.1548C0.173759 2.78557 0 2.31859 0 1.84081V1.84081Z" fill="white"/>
